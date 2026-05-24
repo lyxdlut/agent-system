@@ -8,18 +8,18 @@
 构建了一个基于图链接的终身记忆结构及检索机制。
 
 <p align="center">
-<img src="./1single_Agent/reasoning/input_enhance/picture/Theanine.png" width="60%" />
+<img src="./picture/Theanine.png" width="60%" />
 </p>
 
 1. **在构建记忆阶段**，新记忆节点先通过语义相似度初筛语义节点，再通过LLM判断逻辑关系来精炼相关记忆节点集合，通过相关记忆节点提取出记忆图谱的连通子图，而后将新记忆链接到各个子图的最新的相关记忆节点上。
 
       <p align="center">
-      <img src="./1single_Agent/reasoning/input_enhance/picture/Theanine1.png" width="50%" />
+      <img src="./picture/Theanine1.png" width="50%" />
       </p>
 
 2. **在检索阶段**，通过query检索多个记忆节点m，然后通过将包含m的连通图分解为多条时间线，作为一个时间线的事件记忆，并通过LLM对多条时间线的记忆进行精炼，然后通过LLM生成最终答案。
       <p align="center">
-      <img src="./1single_Agent/reasoning/input_enhance/picture/Theanine2.png" width="50%" />
+      <img src="./picture/Theanine2.png" width="50%" />
       </p>
 
 ## 缺陷
