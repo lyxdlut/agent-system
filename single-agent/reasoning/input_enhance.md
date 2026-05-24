@@ -1,7 +1,7 @@
 # **1. SubgraphRAG**
 目的是在庞大的知识图谱中找到针对问题的最优子图，从而提高检索效率和生成质量，但是并没有这样的最优子图标签，于是作者这篇文章目的是训练一个检索器，并且将子图搜索退化为三元组搜索，将topic实体的编码信息通过图扩散的方式得到推理路径上的关键三元组，并训练轻量级的网络来学习关键三元组。
 <p align="center">
-<img src="./1single_Agent/reasoning/input_enhance/picture/SubgraphRAG.png" width="80%" />
+<img src="./picture/SubgraphRAG.png" width="80%" />
 </p>
 
 # **2. Theanine**
