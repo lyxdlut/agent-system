@@ -87,3 +87,10 @@
 - 预定义的原子操作的覆盖范围有限
 - 模型上限受到预标注模型性能的影响
 - 未来多模态模型应该具有主动感知和探索的能力，并且可以在中间过程中，并且论文证明了将主动操作工具能力能够内化到一个端到端的模型中。
+
+
+# **3. [Visual SKETCHPAD](https://proceedings.neurips.cc/paper_files/paper/2024/file/fb82011040977c7712409fbdb5456647-Paper-Conference.pdf) Visual SKETCHPAD: Sketching as a Visual Chain of  Thought for Multimodal Language Models (26-5-26)**
+
+本文提出了一种通过绘制类似流程图、辅助线之类的草图来增强多模态推理的方法，旨在通过模仿人类绘制草图的方法来增强推理能力。
+
+## 研究背景
