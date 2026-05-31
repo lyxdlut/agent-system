@@ -89,8 +89,24 @@
 - 未来多模态模型应该具有主动感知和探索的能力，并且可以在中间过程中，并且论文证明了将主动操作工具能力能够内化到一个端到端的模型中。
 
 
-# **3. [Visual SKETCHPAD](https://proceedings.neurips.cc/paper_files/paper/2024/file/fb82011040977c7712409fbdb5456647-Paper-Conference.pdf) Visual SKETCHPAD: Sketching as a Visual Chain of  Thought for Multimodal Language Models (26-5-26)**
+# **3. [Visual SKETCHPAD](https://proceedings.neurips.cc/paper_files/paper/2024/file/fb82011040977c7712409fbdb5456647-Paper-Conference.pdf) Visual SKETCHPAD: Sketching as a Visual Chain of  Thought for Multimodal Language Models (26-5-30)**
 
 本文提出了一种通过绘制类似流程图、辅助线之类的草图来增强多模态推理的方法，旨在通过模仿人类绘制草图的方法来增强推理能力。
 
 ## 研究背景
+
+- 人类在进行复杂推理时会本能的使用笔和纸来辅助推理，例如在解题时做辅助线等
+- 现有的MLLM只通过文字进行中间的思考过程，作者的目的是赋予模型一个使用视觉草稿进行推理的过程，使得模型能够像人类一样画线、画框和做标记。
+
+## 做法
+
+- 作者将推理过程拆解为思考-行动-观察三个阶段，在思考阶段，模型能够根据问题判断使用什么工具绘图、如何绘图解决问题；在行动阶段，模型通过合成代码或调用专用的视觉工具来对输入图像进行绘制；在观察阶段，模型将自己画好的图像重新作为输入，并且允许模型通过草图动态的改变后续的计划来进行下一步推理，而不是通过预定的流水线操作
+- 在推理数学题时，模型会通过自动生成代码，来进行绘制辅助线之类的操作。
+<p align="center">
+      <img src="./picture/visualSketchpad1.png" width="100%" />
+</p>
+
+- 在解决计算机视觉任务时，模型会自动调用视觉专家模型，如深度估计模型，检测模型等对图像进行处理，然后通过多步推理得到最终答案。
+<p align="center">
+      <img src="./picture/visualSketchpad2.png" width="100%" />
+</p>
