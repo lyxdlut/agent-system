@@ -47,3 +47,6 @@
 <p align="center">
       <img src="./picture/CPO3.png" width="100%" />
 </p>
+
+# **2. [GoT](https://ojs.aaai.org/index.php/AAAI/article/view/29720) Graph of Thoughts: Solving Elaborate Problems with Large Language Models (26-6-1)**
+
