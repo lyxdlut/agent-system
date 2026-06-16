@@ -7,7 +7,7 @@
 
 # **1. [Factcheck-Bench](https://arxiv.org/pdf/2311.09000) Factcheck-Bench: Fine-Grained Evaluation Benchmark for Automatic Fact-checkers (26-5-31)**
 
-现在的大模型虽然有优秀的生成能力，但是往往会在生成的过程中产生幻觉，这往往限制了模型在严肃场景下的部署。为了评估模型生成内容是否有幻觉,有不少工作致力于研究模型的事实评估方法，主要目的是评估模型生成的内容是否准确符合事实。
+现在的大模型虽然有优秀的生成能力，但是往往会在生成的过程中产生幻觉，这往往限制了模型在严肃场景下的部署。为了评估模型生成内容是否有幻觉,有不少工作致力于研究模型的事实评估方法，主要目的是评估模型生成的内容是否准确符合事实。(**利用外部知识进行幻觉校验**)
 
 ## 现有事实评估方法的缺陷
 
@@ -34,3 +34,5 @@
     8. 修改回复内容：针对编辑后的声明进行整合，生成流畅正确的回应
 
 - 作者根据这个流程标注了一个事实检查的benchmark，并在多个事实检测的方法中进行了测试。
+
+# **2. [HaloScope](https://proceedings.neurips.cc/paper_files/paper/2024/file/ba92705991cfbbcedc26e27e833ebbae-Paper-Conference.pdf): Harnessing Unlabeled LLM Generations  for Hallucination Detection (26-6-16)**
